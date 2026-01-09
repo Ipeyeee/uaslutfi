@@ -1,0 +1,195 @@
+body {
+    background-color: #f4f6f9;
+    overflow-x: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: gray;
+    color: #fff;
+    padding-top: 20px;
+}
+
+/* BRAND */
+.sidebar .brand {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* MENU */
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+}
+
+/* CONTENT */
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+/* CARD */
+.dashboard-card {
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+.table-custom {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.table-custom thead {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.table-custom th,
+.table-custom td {
+    vertical-align: middle;
+}
+
+/* BADGE STATUS */
+.badge-status {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+}
+
+.badge-pending { background: #ffc107; color: #000; }
+.badge-proses  { background: #0dcaf0; color: #000; }
+.badge-selesai { background: #198754; color: #fff; }
+
+/* ACTION BUTTON */
+.btn-action {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+}
+
+.bg-form {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef3ff, #f8f9fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.form-wrapper.wide {
+    max-width: 800px;
+}
+
+.form-card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control,
+.form-control-lg {
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* ==========================
+   ADMIN CONTENT
+========================== */
+.admin-content {
+    margin-left: 240px;
+    padding: 60px 30px;
+    background: #f5f6f8;
+    min-height: 100vh;
+}
+
+/* ==========================
+   PROFILE ADMIN
+========================== */
+.admin-profile {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.profile-header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eaeaea;
+}
+
+.profile-header h4 {
+    font-weight: 600;
+}
+
+.profile-header small {
+    color: #777;
+}
+
+.profile-body {
+    padding: 35px;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-section h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile-section p,
+.profile-section td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+    .admin-content {
+        margin-left: 0;
+        padding: 30px 15px;
+    }
+}
